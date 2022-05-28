@@ -1,5 +1,6 @@
 {:paths ["src" "resources"]
- :deps {org.clojure/clojure {:mvn/version "1.10.3"}}
+ :deps {org.clojure/clojure {:mvn/version "1.10.3"}
+        instaparse/instaparse {:mvn/version "1.4.12"}}
  :aliases
  {:run-m {:main-opts ["-m" "msdos.trans"]}
   :run-x {:ns-default msdos.trans
