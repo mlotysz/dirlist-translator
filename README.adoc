@@ -1,0 +1,20 @@
+= Dir listing translator
+
+Having MS-DOS dir listing text file translate it to some language and make
+translated list in excel/csv form.
+
+== Problems
+* tokenize names to be translated
+* verify correctness of tokenizer
+* make set of words to be translated
+* make translated data
+* create csv/excel file and macro to navigation
+
+== Solution
+* link:msdoslist.ebnf[EBNF MS-DOS dir listing definition]
+* http://instaparse-live.matt.is/[Fantastic test tool for EBNF grammars]
+* reduce data to set of words
+- https://github.com/Engelberg/instaparse[Fine library to use]
+- ignore non ascii chars -> clojure program
+* use that set to translate line by line
+* save result to csv/excel file
