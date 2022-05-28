@@ -1,0 +1,8 @@
+(* NTFS full path grammar produced by dir command *)
+<line> = <drive?> {dirs}
+<dirs> = (<sep> dirs)? file?
+<drive> = #'[a-zA-Z]:'
+<file> = name {dot+ name}?
+<sep> = '\\'
+name = #'[a-zA-Z0-9 \-\&\[\]\(\),_%\$+]+'
+<dot> = '.'

@@ -12,9 +12,13 @@ translated list in excel/csv form.
 
 == Solution
 * link:msdoslist.ebnf[EBNF MS-DOS dir listing definition]
-* http://instaparse-live.matt.is/[Fantastic test tool for EBNF grammars]
+* http://instaparse-live.matt.is/[Test tool for EBNF grammars]
 * reduce data to set of words
 - https://github.com/Engelberg/instaparse[Fine library to use]
 - ignore non ascii chars -> clojure program
 * use that set to translate line by line
 * save result to csv/excel file
+
+Resources:
+* https://github.com/Engelberg/instaparse/issues/103[EBNF refinement, new line matching]
+* https://github.com/thebusby/iota[Using reducers with files]
